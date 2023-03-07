@@ -39,7 +39,7 @@ public class TechGlobal_Homework {
                         "    \"firstName\": \""+faker.name().firstName()+"\",\n" +
                         "    \"lastName\": \""+faker.name().lastName()+"\",\n" +
                         "    \"email\": \""+faker.internet().emailAddress() +"\",\n" +
-                        "    \"dob\": \"1992-12-15\"\n" +
+                        "    \"dob\": \"1978-03-30\"\n" +
                         "}")
                 .when().put("https://tech-global-training.com/students/" + getId)
                 .then().log().all().extract().response();
@@ -52,7 +52,7 @@ public class TechGlobal_Homework {
                         "    \"firstName\": \""+faker.name().firstName()+"\",\n" +
                         "    \"lastName\": \""+faker.name().lastName()+"\",\n" +
                         "    \"email\": \""+faker.internet().emailAddress() +"\",\n" +
-                        "    \"dob\": \"1992-12-15\"\n" +
+                        "    \"dob\": \"1999-11-11\"\n" +
                         "}")
                 .when().patch("https://tech-global-training.com/students/" + getId)
                 .then().log().all().extract().response();
